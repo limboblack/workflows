@@ -42,8 +42,10 @@ gulp.task('compass', function() {
     .pipe(gulp.dest('builds/development/css'))
 })
 
-gulp.task('default', ['coffee', 'js', 'compass']);
+
 
 gulp.task('watch', function () {
   gulp.watch('coffeeSources', ['coffee']);
 })
+
+gulp.task('default', ['coffee', 'js', 'compass', 'watch']);
