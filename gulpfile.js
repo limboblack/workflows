@@ -43,3 +43,7 @@ gulp.task('compass', function() {
 })
 
 gulp.task('default', ['coffee', 'js', 'compass']);
+
+gulp.task('watch', function () {
+  gulp.watch('coffeeSources', ['coffee']);
+})
